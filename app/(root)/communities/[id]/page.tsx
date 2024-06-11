@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
-import Link from "next/link";
+// import { Button } from "@/components/ui/button";
+// import Image from "next/image";
+// import Link from "next/link";
 
 interface Props {
   id: string;
@@ -16,7 +16,8 @@ interface Props {
 function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
   return (
     <article className="community-card">
-      <div className="flex flex-wrap items-center gap-3">
+      <div>Community id - {id}</div>
+      {/* <div className="flex flex-wrap items-center gap-3">
         <Link href={`/communities/${id}`} className="relative h-12 w-12">
           <Image
             src={imgUrl}
@@ -64,7 +65,7 @@ function CommunityCard({ id, name, username, imgUrl, bio, members }: Props) {
             )}
           </div>
         )}
-      </div>
+      </div> */}
     </article>
   );
 }
